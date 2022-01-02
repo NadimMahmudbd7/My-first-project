@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0; padding: 0;}
+        #body_menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        #total_menu {
+            position: absolute;
+            top: 0px;
+            right: 50px;
+        }
+
+        #total_menu ul {
+            display: flex;
+        }
+
+        #total_menu ul li {
+            list-style: none;
+        }
+
+        #total_menu ul li a {
+            text-decoration: none;
+            padding: 8px 26px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #1b25a1;
+        }
+
+        #image {
+            position: relative;
+        }
+
+        #submenu{flex-direction: column;}
+        #submenu li{ }
+        #submenu li a{}
+    </style>
+</head>
+
+<body>
+    <div id="body_menu">
+        <div id="image">
+            <img src="bg.png">
+        </div>
+
+
+        <navmenu id="total_menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a>
+                    <ul id="submenu">
+                        <li><a href="#">About</a></li>
+                         <li><a href="#">Services</a></li>
+                         <li><a href="#">protfolio</a></li>
+                         <li><a href="#">Contact</a></li>
+                    </ul>
+                
+                
+                </li>
+                <li><a href="#">protfolio</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </navmenu>
+    </div>
+
+
+</body>
+
+</html>
